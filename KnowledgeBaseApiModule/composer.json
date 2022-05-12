@@ -1,0 +1,24 @@
+{
+  "name": "freescout/knowledgebase-api-module",
+  "description": "",
+  "authors": [
+    {
+      "name": "jtorvald",
+      "email": ""
+    }
+  ],
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Modules\\KnowledgeBaseApiModule\\Providers\\KnowledgeBaseApiModuleServiceProvider"
+      ],
+      "aliases": {
+      }
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Modules\\KnowledgeBaseApiModule\\": ""
+    }
+  }
+}

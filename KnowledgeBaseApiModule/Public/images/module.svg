@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>module</title>
+	<defs>
+		<path d="M62,3.00122599 C62,1.35349407 60.6354067,0 58.9741627,0 L11.6435407,0 C5.14688995,0 0,5.10502656 0,11.4017164 C0,11.4017164 0,62.8197793 0,62.8492031 C0,67.9542297 4.22727273,72 9.37416268,72 L58.8258373,72 C60.0421053,72 61.2435407,71.2496935 61.7033493,70.0433183 C62.1631579,68.8369432 61.8516746,67.498161 60.7985646,66.7478545 C58.1138756,65.0559869 57.9507177,61.3485901 60.338756,59.7008582 C60.8430622,59.2006539 61.9851675,58.1708214 61.8961722,56.6996322 C61.9703349,56.4642419 62,3.00122599 62,3.00122599 Z M6.05167464,62.8492031 C6.05167464,61.0543523 7.5645933,59.7008582 9.37416268,59.7008582 L52.9373206,59.7008582 C51.6023923,61.907642 51.8842105,64.496935 52.9373206,65.997548 L9.37416268,65.997548 C7.5645933,65.997548 6.05167464,64.6587658 6.05167464,62.8492031 Z M55.9631579,53.6984062 L9.38899522,53.6984062 C8.21722488,53.6984062 7.10478469,53.9190846 6.06650718,54.3163057 L6.06650718,11.4017164 C6.06650718,8.4004904 8.63253589,6.00245198 11.6583732,6.00245198 L55.9779904,6.00245198 L55.9779904,53.6984062 L55.9631579,53.6984062 Z" id="path-1"></path>
+		<filter x="-26.6%" y="-18.8%" width="153.2%" height="145.8%" filterUnits="objectBoundingBox" id="filter-2">
+			<feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+			<feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+			<feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+		</filter>
+		<polygon id="path-3" points="27.0340136 0 0 26.7240312 10.0272109 26.7240312 2.31972789 47 30 20.2742777 19.9710884 20.2742777"></polygon>
+		<filter x="-21.7%" y="-9.6%" width="150.0%" height="131.9%" filterUnits="objectBoundingBox" id="filter-4">
+			<feOffset dx="1" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+			<feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+			<feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+		</filter>
+	</defs>
+	<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<g id="module">
+			<rect id="Rectangle" stroke="#979797" fill="#BA3434" x="0.5" y="0.5" width="255" height="255"></rect>
+			<circle id="Oval" fill="#E95252" cx="128" cy="85" r="57"></circle>
+			<g id="book-svgrepo-com" transform="translate(97.000000, 49.000000)" fill-rule="nonzero">
+				<g id="Shape">
+					<use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+					<use fill="#FFFFFF" xlink:href="#path-1"></use>
+				</g>
+				<g id="Path" transform="translate(16.000000, 6.000000)">
+					<use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+					<use fill="#FFBC00" xlink:href="#path-3"></use>
+				</g>
+			</g>
+			<text id="Knowledge-Base-API" font-family="Helvetica" font-size="30" font-weight="normal" fill="#FFFFFF">
+				<tspan x="53.2763672" y="189">Knowledge</tspan>
+				<tspan x="65.7861328" y="225">Base API</tspan>
+			</text>
+		</g>
+	</g>
+</svg>
