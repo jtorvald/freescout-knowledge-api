@@ -47,7 +47,6 @@ class KnowledgeBaseApiController extends Controller
         }
 
         return Response::json([
-            'id' => 0,
             'mailbox_id' => $mailbox->id,
             'name' => $mailbox->name,
             'categories' => $items,
