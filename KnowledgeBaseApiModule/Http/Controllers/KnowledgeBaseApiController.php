@@ -77,15 +77,19 @@ class KnowledgeBaseApiController extends Controller
 
         foreach ($articles as $i => $a) {
             $a->setLocale($locale);
-            $articles[$i] = (object)['id' => $a->id, 'title' => $a->getAttributeInLocale('title', $locale), 'text' => $a->getAttributeInLocale('text', $locale)];//
+            $articles[] = (object)['id' => $a->id, 'title' => $a->getAttributeInLocale('title', $locale), 'text' => $a->getAttributeInLocale('text', $locale)];
         }
 
         return Response::json([
             'id' => 0,
             'mailbox_id' => $mailbox->id,
             'name' => $mailbox->name,
-            'category' => $category,
-            'articles' => $articles,
+            'category' => (object)[
+                'id'=>$category->id,
+                'name'=>$category->getAttributeInLocale('name', $locale),
+                'description'=>$category->getAttributeInLocale('description', $locale),
+            ],
+            'articles' => (array)$articles,
         ], 200);
     }
 
