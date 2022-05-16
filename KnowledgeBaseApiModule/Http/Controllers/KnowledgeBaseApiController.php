@@ -70,12 +70,12 @@ class KnowledgeBaseApiController extends Controller
         }
         $articles = [];
         if ($category) {
-            $articles = $category->getArticlesSorted(true);
+            $sortedArticles = $category->getArticlesSorted(true);
         }
 
         $locale = $request->input('locale') ?? \Kb::defaultLocale($mailbox);
 
-        foreach ($articles as $i => $a) {
+        foreach ($sortedArticles as $a) {
             $a->setLocale($locale);
             $articles[] = (object)['id' => $a->id, 'title' => $a->getAttributeInLocale('title', $locale), 'text' => $a->getAttributeInLocale('text', $locale)];
         }
@@ -89,7 +89,7 @@ class KnowledgeBaseApiController extends Controller
                 'name'=>$category->getAttributeInLocale('name', $locale),
                 'description'=>$category->getAttributeInLocale('description', $locale),
             ],
-            'articles' => (array)$articles,
+            'articles' => $articles,
         ], 200);
     }
 
